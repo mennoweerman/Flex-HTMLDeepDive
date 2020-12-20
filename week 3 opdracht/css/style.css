@@ -1,0 +1,32 @@
+#fotoslider{
+    display: flex;
+    flex-direction: row;
+    transition-property: left;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+}
+.foto{
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+#viewport{ 
+  position: relative;
+  height: 150px;
+}
+#fotoslider {
+  position: absolute;
+  left: 0;
+}
+#controls{
+  padding-top: 310px;
+}
+#viewport{
+  overflow: hidden;
+  width: 400px;
+  height:800px ;
+}

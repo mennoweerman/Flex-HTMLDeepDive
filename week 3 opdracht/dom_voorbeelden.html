@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoslider</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        function haalElementenOp() {
+            let fotoslider = document.getElementById("fotoslider");
+            console.log(fotoslider);
+            let eersteFotoDiv = document.querySelector('.foto');
+            console.log(eersteFotoDiv);
+            let tweedeFotoDiv = document.querySelector('.fotos');
+            console.log(tweedeFotoDiv);
+            let derdeFotoDiv = document.querySelector('.foto3');
+            console.log(derdeFotoDiv);
+            let vierdeFotoDiv = document.querySelector('.foto4');
+            console.log(vierdeFotoDiv);
+            let vijfdeFotoDiv = document.querySelector('.foto5');
+            console.log(vijfdeFotoDiv);
+            let alleFotoDivs = document.querySelectorAll(' img');
+            console.log(alleFotoDivs);
+            for (let i = 0; i < alleFotoDivs.length; i++) {
+                let foto = alleFotoDivs[i];
+                foto.style.borderColor = '#000000';
+                foto.style.borderStyle = 'solid';
+                foto.style.borderWidth = '20px';
+            }
+            // Class aanpassen
+            fotoslider.className = 'fotoslider';
+
+            // Inhoud tussen tags aanpassen
+            //fotoslider.innerHTML = 'Alle fotos vervangen door deze tekst!';
+
+            //  Style aanpassen
+            fotoslider.style.borderColor = '#0000FF';
+            fotoslider.style.borderStyle = 'solid';
+            fotoslider.style.borderWidth = '2px';
+            fotoslider.position = 'absolute';
+            fotoslider.left = '100px';
+        }
+        window.addEventListener('DOMContentLoaded', haalElementenOp)
+    </script>
+</head>
+
+<body>
+    <div id="fotoslider">
+        <div class="foto"><img src="images/foto1.jpg" /></div>
+        <div class="fotos"><img src="images/foto2.jpg" /></div>
+        <div class="foto3"><img src="images/foto3.jpg" /></div>
+        <div class="foto4"><img src="images/foto4.jpg" /></div>
+        <div class="foto5"><img src="images/foto5.jpg" /></div>
+    </div>
+</body>
+
+</html>
