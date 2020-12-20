@@ -1,0 +1,51 @@
+#fotoslider{
+    display: flex;
+    flex-direction: row;
+    transition-property: left;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+}
+.foto{
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+#viewport{ 
+  position: relative;
+  height: 150px;
+}
+#fotoslider {
+  position: absolute;
+  left: 0;
+}
+#controls{
+  padding-top: 310px;
+  padding-left: 30%;
+  padding-bottom: 2%;
+  border: darkblue;
+  color: yellow;
+  font-size: pink;
+  background-color: rgb(255, 255, 255);
+}
+#viewport{
+  overflow: hidden;
+  width: 400px;
+  height: 800px;
+  /*box-shadow: 0px 1px 10px 3px #000000;*/
+}
+#vorige-btn{
+  border: rgb(255, 40, 76);
+  color: rgb(49, 49, 49);
+  font-size: 90%;
+  box-shadow: 2px 4px 4px 3px #505050;
+}
+#volgende-btn{
+  border: pink;
+  color: rgb(49, 49, 49);
+  font-size: 90%;
+  box-shadow: 2px 4px 4px 3px #505050;
+}
